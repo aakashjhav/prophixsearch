@@ -1,0 +1,269 @@
+/* ====================Blanket=================== */
+:root{
+    
+    --
+}
+
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+
+/* ====================Navigation & title=================== */
+.title , nav {
+    
+    display:flex;
+    height: 76px;
+     border-bottom: 2px solid black;
+    align-items: center; 
+    background-color:white;
+    position: sticky;
+    z-index: 10;
+   
+}
+
+
+/* ====================Title=================== */
+.title{
+    top:0px;
+    background: white;
+   
+}
+
+.title img{
+       height: 60%;
+}
+.title ion-icon{
+    font-size: 210%; 
+    position: absolute;
+    left: 88%;
+}
+.username{
+   position: absolute;
+    left: 90%
+        
+}
+
+/* ====================Navigation=================== */
+
+nav{
+    top: 76px;
+}
+nav{
+    height: 100%;
+}
+button{
+    margin: 3px 10px;
+         
+}
+nav button{
+    margin-right: 3em;
+    background: white;
+    border-color: #D9D9D9;
+    padding: 0.3em;
+    
+    }
+nav  button ion-icon{
+    }
+
+.menu{
+   position: absolute;
+    left: 94%;
+     font-size: 180%;
+    
+}
+
+
+/* ====================Navigation dropdown=================== */
+
+
+nav button ul{
+    position: absolute;
+    margin-top:0.1%
+}
+
+nav button ul li {
+    display: none;
+    list-style: none;
+    padding: 1em;
+   background-color: #F5F5F5;
+    text-align:left;
+     
+}
+
+nav button:hover ul li {
+    display: block;
+    background-color: #F5F5F5;
+}
+
+nav button ul li:hover {
+    display: block;
+    background-color: #D9D9D9;
+}
+
+
+
+/* =================================================*/
+
+/* ====================Report Card=================== */
+
+.report-grid{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-auto-rows: 50vh;
+width: 95vw;
+    background: white;
+/*border: 2px solid red;*/
+margin-left: 2.5%;
+grid-column-gap: 9px;
+grid-row-gap: 35px;
+   position: relative;
+    z-index: 0;
+    position: relative;
+}
+
+
+
+.report{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    border: 2px solid black;
+       background-color: #F5F5F5;
+    position: relative;
+    z-index: 1;
+}
+
+
+.part1{
+/*    border: 2px solid purple;*/
+    height: 69%;
+    width: 100%;
+    position: relative;
+    z-index:0;
+     background-color: #F5F5F5;
+    
+}
+.part2{
+/*    border: 2px solid blue;*/
+    height: 22%;
+    width: 100%;
+    font-size: 150%;
+    display:inline;
+    position: relative;
+    z-index: 0;
+   background-color: #F5F5F5;
+}
+
+.part3{
+/*      border: 2px solid blue;*/
+    height: 10%;
+    width: 100%;
+    position: relative;
+      z-index: 0;
+    background-color: #F5F5F5;
+}
+
+.part1 img{
+   width: 100%;
+    height: 100%;
+    border-bottom: 2px solid black;
+    object-fit:contain;
+    position: relative;
+    z-index: 0;
+    
+}
+
+.part1:hover{
+    position: absolute;
+    z-index: 11;
+     border-bottom: 2px solid black; 
+   transform: scale(1.8) translateX(10%);
+     
+}
+
+
+
+/*
+
+.part1 img:hover{
+    width: 150%;
+
+    height: 200%;
+    border: 2px solid red;
+        z-index: 222 ;
+    transform: scale(1.5);
+}
+*/
+
+.part2 button{
+    display: inline-block;
+    border: 1px solid #D9D9D9;
+    padding: 05px;
+    position: relative;
+    border-radius:20px;
+    z-index:0;
+}
+.clock{
+    color: black;
+    position: absolute;
+   bottom: 70%;
+    left: 78%;
+    z-index: 0;
+}
+
+.drag{
+    position: absolute;
+    left: 95%;
+    top: 7%;
+       z-index: 0;
+    
+}
+.drag:hover{
+    cursor: move;
+}
+.part2 p {
+     position: absolute;
+     bottom: 67.5%;
+    left:83%;
+  z-index: 0;
+    
+}
+
+
+.part3 ion-icon{
+    font-size: 150%;
+    position: absolute;
+    top:20%;
+    left:2%;
+      z-index: 0;
+}
+
+.queue{
+  position: absolute;
+  left: 73%;
+   top: -7%;
+      z-index: 0;
+    border-radius: 20px;
+    background: #FFFFFF;
+   border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.book{
+    position: absolute;
+      top: -7%;
+      left: 50%;
+      z-index: 0;
+    color: #EF373E;
+    border: 1px solid #EF373E;
+    border-radius: 20px;
+    padding: 5px
+    
+}
+
+

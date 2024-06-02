@@ -1,0 +1,250 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+
+}
+
+
+/*-----------------------------------*/
+/* Grid*/
+/*------------------------------------*/
+
+
+
+
+
+/*
+.grid-container{
+    display: grid;
+    grid-template-columns: 150px 150px 150px ;
+    grid-auto-rows: 150px  150px;
+}
+
+.item{
+    grid-column-start:2 ;
+    grid-column-end: 4 ;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+*/
+
+
+
+.grid-container{
+    display: grid;
+
+    
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px;
+    grid-auto-columns: 300px 300px;
+    grid-auto-flow: dense;
+    grid-template-areas: "Apple boy  cat"
+                        "airplane  bunny  coach"; 
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: center;
+    align-content:start;
+    
+    
+}
+
+/*
+.item{
+     height: 300px;
+    width: 300px;
+}
+*/
+.item1{
+/*        grid-area: b;*/
+/*    grid-column: 7;*/
+    grid-area: Apple;
+    grid-column-start: span 2;
+    grid-column-end: span 4;
+ 
+/*
+       height: inherit;
+    width: inherit;
+*/
+/*
+      display: grid;
+    grid-area: a;
+    
+*/
+/*
+    height: 70px;
+    
+    grid-column: 3;
+    grid-row:3; */
+}
+
+
+.item2{
+ 
+    grid-area: boy;
+    grid-column-start: 1;
+    grid-column-end:2;
+}
+
+
+/*
+.item3{
+   
+    grid-area: cat;
+
+}
+*/
+
+.item4{
+grid-area: airplane;
+        
+}
+.item5{
+    grid-area: bunny;
+        
+}
+
+.item6{
+    grid-area:coach;
+    
+}
+/*
+
+.item7{
+    grid-column: 4;
+}
+
+.item8{
+    grid-column: 4;
+}
+
+.item9{
+    grid-column: ;
+}
+
+.item10{
+    grid-column: 10;
+}
+
+.item11{
+    grid-column: 11;
+}
+
+.item12{
+    grid-column: 12;
+}
+
+.item13{
+    grid-column: 13;
+}
+
+.item14{
+    grid-column: 14;
+}
+*/
+
+
+.gridup{
+    display: grid;
+    grid: "header header" 
+        "nav nav"
+        "body sidebar"
+        "footer footer";
+    grid-template: 1fr 25%;    
+}
+
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+body{
+    grid-area:body;
+}
+aside{
+    grid-area:sidebar;
+}
+footer{
+    grid-area: footer;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px;
+}
+.grid_item{
+    max-width: 150px;
+}
+.a{
+    background-color: lime;
+    grid-row:1 / span 2;
+    grid-column: 1 / span 2;
+    align-self: start;
+}
+
+.b{
+    background-color: skyblue;
+    grid-row: 1/ span 2;
+    grid-column: 1/ span 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.c{
+    background-color: orange;
+    grid-row: 1/ span 2;
+    grid-column: 1/ span 2;
+    justify-self: end;
+    align-self: end;
+}
+
+
+.grid-container2{
+    display: grid;
+    margin: 40px auto; 
+/*
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px;
+*/
+    
+    grid-template-columns: repeat (auto-fill,minmax(15ch, 1fr));
+    grid-gap: 1em;
+    
+}
+
+.girditem{
+    background-color: lime;
+    padding: 1em;
+}
+.1{
+    grid-row: span 2;
+}
+
+
+@media (min-width: 35em){
+    .main{
+        width: 67%;
+        float: left;
+    }
+    
+    .sidebar{
+        width: 33%;
+        float: right;
+    }
+}

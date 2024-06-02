@@ -1,0 +1,120 @@
+
+/* font- montserrat
+colors- #EF373E
+#FFF6F4
+#798897
+*/
+
+/*================
+======Blanket=====
+==================*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+
+    color: black;
+    font-size: 25px;
+    font-family:Montserrat;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+   
+}
+body{
+    background-color: rgba(121, 136, 151, 0.27);
+    overflow-x: hidden;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+/*================
+======resueable=====
+==================*/
+section{
+    min-height: 100vh;
+/*    border: 2px solid black;*/
+}
+
+
+/*================
+======navigation=====
+==================*/
+nav{
+    display: inline;
+    margin-bottom: 10px; 
+}
+
+.navigation{
+   display: flex;
+    flex-direction: column;
+    background-color: #798897;
+    padding: 0.5rem;
+}
+
+
+
+.navigation input{
+    justify-self: center;
+    float: right;
+    bottom: 1.5rem;
+    width: 25vw;
+    height: 3vh;
+    border-radius: 5em
+}
+
+.navigation input::placeholder{
+    
+    font-size: 1.5em;
+    
+}
+
+
+/*================
+======Gridinfo=====
+==================*/
+.gridinfo{
+     height: 100%;
+    padding: 3em 10em
+}
+
+.gridinfo1{
+    float: left;
+
+}
+
+.gridinfo1 img{
+    width: 50rem;
+    border: 5px solid rgb(226, 154, 141);
+    border-radius: 0.5em;
+}
+
+.gridinfo2 li{
+     list-style: none;
+    margin: 1rem;
+    padding: 0.1rem 1em;
+    background-color: #FFF6F4;
+    border-radius: 10px;  
+}
+
+
+.gridinfo2 li:hover{
+          cursor:pointer;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(255,246,244,0); 
+box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(255,246,244,0);
+}
+ 
+
+
+.gridinfo2{
+    float: right;
+   height: 100px;
+    background-color: rgba(121, 136, 151, 0.22);
+    height:23em;
+    box-shadow: 2px solid;
+      border-radius: 0.25em;
+}
